@@ -1,0 +1,17 @@
+.H1 { 
+    color: greenyellow;
+    text-align: justify;
+    background-color: blueviolet;   
+}
+
+.H2 {
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.col-sm-3 {
+    text-align: left;
+    width: 33%
+}
