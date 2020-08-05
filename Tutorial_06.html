@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- arrays' count start begins with 0 -->
+    <script type="text/javascript">
+
+        var characters = ["Saru", "Michael", "Tilly", "Culber", "Paul"];
+        var talent = [1, 2, 3, 4, 5];
+        var captains = ["Picard", 178, "Kirk", 79, "Sisko", 179];
+        var discovery = (confirm("Is Star Trek Discover an amazing show?"));
+
+        if (discovery) {
+            alert("You are correct")
+        }
+        else alert("You are wrong");
+
+        //will log the number of array variables in variable "characters"//
+        console.log(characters.length);
+
+        //logs the character element at the end//
+        console.log(characters[characters.length - 1]);
+
+        //will log the number of array variables in variable "talents"//
+        console.log(talent.length);
+
+        //logs the index position for Riker.  Since there is no "Riker" it logs it at -1//
+        console.log(captains.indexOf("Riker"));
+
+        //will log the number of array variables in variable "captains"//
+        console.log(captains.length)
+
+        //i++ === (i = i+1)//
+        //++ === +1//
+        var tester = 7;
+        tester = ++tester;
+        console.log('tester is: ' + tester); //console shows "tester is: 8"//
+
+        //let and for are the same (for now)//
+        //const is a fixed variable that cannot change//
+        //creates a loop until satisfied//
+        for (var tester = 0; tester < characters.length; tester++) 
+        {
+        console.log("My favorite Discovery character is " + characters[tester]);
+        }
+        // i=0 => "My favorite Discover character is Saru"
+         // i=0 => "My favorite Discover character is Michael"
+          // i=0 => "My favorite Discover character is Tilly"
+           // i=0 => "My favorite Discover character is Culber"
+            // i=0 => "My favorite Discover character is Paul"
+        
+        //same thing as above//
+        //don't have to loop an array//
+        for (var trek = 0; trek < 7; trek++) {
+            console.log("the best season is season " + trek)
+        };
+
+    </script>
+</body>
+
+</html>
