@@ -24,24 +24,39 @@
                 background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d89557d7-05b8-4f09-8538-f22281ce1280/dc59a59-ecb244f8-3e99-4351-b1b8-08d24babacf9.jpg/v1/fill/w_1024,h_576,q_75,strp/daily_deviation__66__random_space_stuff_by_brittneylh_dc59a59-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01NzYiLCJwYXRoIjoiXC9mXC9kODk1NTdkNy0wNWI4LTRmMDktODUzOC1mMjIyODFjZTEyODBcL2RjNTlhNTktZWNiMjQ0ZjgtM2U5OS00MzUxLWIxYjgtMDhkMjRiYWJhY2Y5LmpwZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.O_rwVnIV0Pzvf4BidYbWxPl-adJ2xtj9qz7R0mQHNuM");
                 background-size: cover;
             }
-        
-            .fryMeme {
-                float: top;
-                border-style: dotted;
-                border-color: green;
-                padding: 25px;
-                background-color: cadetblue
-            };
+                .Layer3 {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 0;
+                }
+                .Layer2 {
+                    position: relative;
+                    top: -30px;
+                    left: 215px;
+                    z-index: 1;
+                }
+
+                .Layer1 {
+                    position: relative;
+                    top: 255px;
+                    left: 475px;
+                    z-index: 2;
+                }
+
      </style>
 <!--------------------------------------------------------------->
      <!--PICTURES-->
         <!--A picture must be imported into a paragraph of some sort-->
         <p>
-            <!--create a div class in order to edit the image itself-->
-            <div class = "fryMeme">
-            <!-- You can edit height and width properties of the picture within the img src import-->
-            <img src = "https://s3.amazonaws.com/rails-camp-tutorials/blog/programming+memes/programming-or-googling.jpg" height="250px" width="300px">
+            <div class="simulation">
+                    <img src="https://i.cdn.turner.com/adultswim/big/video/episode-thumbs-16x9/rickandmorty_cc_004_pt3_JF3hd-03.jpg" alt="Layer1" style="width:250px" class="Layer1" >
+
+                    <img src="https://i.cdn.turner.com/adultswim/big/video/episode-thumbs-16x9/rickandmorty_cc_004_pt3_JF3hd-03.jpg" alt="Layer2" style="width:500px" class="Layer2" >
+
+                    <img src="https://i.cdn.turner.com/adultswim/big/video/episode-thumbs-16x9/rickandmorty_cc_004_pt3_JF3hd-03.jpg" alt="Layer3" style="width:750px" class="Layer3" >
             </div>
+
         </p>
 <!--------------------------------------------------------------->
         <!--Create a space between paragraphs-->
@@ -80,21 +95,43 @@
         <div class="H3">
             <!-- Enter script beofre java-->
             <script type="text/javascript">
+
+                // Variables
+                var name = prompt("What is your name?");
+                var quest = prompt("What is your quest?");
+                var favColor = prompt("What is your favorite color?");
+                var truth = confirm("Are these things true?");
+                if(truth) {
+                    alert("You may proceed");
+                }
+               else { 
+                   alert("You may go no further"), alert("Goodbye!"), window.location = "https://www.youtube.com/watch?v=xfr64zoBTAQ&list=PL3KnTfyhrIlcudeMemKd6rZFGDWyK23vx&index=7";
+                 }
+                          
+                </script>
+
+                
+
+                
+
             //Create the variances with var VARIABLE = ["      "];//  
-            var phoneMaker = ([Microsoft], [Apple], [Huawei]);
-            console.log(phoneMaker);
-            var color = ([Blue], [Silver], [Green], [Pink], [Gold]);
-            console.log(color);
-            var cost = (250, 699, 150); 
-            console.log(cost);
+           // var phoneMaker = ([Microsoft], [Apple], [Huawei]);
+           // console.log(phoneMaker);
+          //  var color = ([Blue], [Silver], [Green], [Pink], [Gold]);
+           // console.log(color);
+           // var cost = (250, 699, 150); 
+           // console.log(cost);
 
             //Self Test: enter in "or" behind the final element
-            var skip = //confirm("Would you like to skip the prompts?")
-            var company = prompt("Which of these phone companies do you preferr: " + phoneMaker);
-            var favorite = prompt("Would you want a " + color);
-            var pay = prompt("are you willing to pay $" + cost + " for a phone")
+           // var skip = prompt("would you like to skip this prompt?");
+           // var company = prompt("Which of these phone companies do you prefer: " + phoneMaker);
+           // var favorite = prompt("Would you want a " + color);
+           // var pay = prompt("are you willing to pay $" + cost + " for a phone")
+
+           // if (prompt)
+            
             // end script
-            </script>
+        
             <!--All items within the div class are edited in CSS-->
         </div>    
 

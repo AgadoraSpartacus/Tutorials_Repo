@@ -30,8 +30,12 @@
     border-color: chartreuse;
 }
 
-.fryMeme {
-    text-align: center;
+.simulation {
+    height: 350px;
+    width: 500px;
+    border: 25px;
+    margin: 25px;
+
 }
 
 .col-sm-4 {
