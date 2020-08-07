@@ -10,7 +10,7 @@
 <!------------------------------------------------------------------->
     <!--LINKS AND REFERENCES-->
     <!-- Enter in links for reference to link two files together for editing purposes-->
-    <link rel="stylesheet" href="CodeHacks.css">
+    <link rel="stylesheet" href="CodeHacks.css">    <!-- This connects us to the .css page-->
 <!------------------------------------------------------------------->
 <body>
 
@@ -26,13 +26,15 @@
             }
         
             .fryMeme {
-                float: right;
+                float: top;
                 border-style: dotted;
                 border-color: green;
                 padding: 25px;
+                background-color: cadetblue
             };
      </style>
 <!--------------------------------------------------------------->
+     <!--PICTURES-->
         <!--A picture must be imported into a paragraph of some sort-->
         <p>
             <!--create a div class in order to edit the image itself-->
@@ -55,34 +57,69 @@
         <br>
 <!--------------------------------------------------------------->
         <!--COLUMNS AND GRIDS-->
-        <div class="H2"
-             style="background-color: lavender;">
-             <div class="col-sm-3">
-                 A Lesson about columns
-             </div>
-
+        <!-- in the col-" "- #, the size indicates the max container size.  the # indicates how many columns it is fullfilling out of 12-->
+        <br>
+        <br>
+        <div class="H2">
+            <div class="container1">
+                <div class="row">
+                    <div class="col-sm-4">
+                        Column 1
+                    </div>
+                    <div class="col-sm-6">
+                        Column 2
+                    </div>
+                    <div class="col-sm-2">
+                        Column 3
+                    </div>
+               </div>
+            </div>
         </div>
 <!--------------------------------------------------------------->
+<!--"VARIANCES-->        
         <div class="H3">
             <!-- Enter script beofre java-->
             <script type="text/javascript">
-            //style lets you edit within the html//
-            //class lets you group items//
-            <style class = "styleClass1">
+            //Create the variances with var VARIABLE = ["      "];//  
+            var phoneMaker = ([Microsoft], [Apple], [Huawei]);
+            console.log(phoneMaker);
+            var color = ([Blue], [Silver], [Green], [Pink], [Gold]);
+            console.log(color);
+            var cost = (250, 699, 150); 
+            console.log(cost);
 
-            
-
-            </style>
+            //Self Test: enter in "or" behind the final element
+            var skip = //confirm("Would you like to skip the prompts?")
+            var company = prompt("Which of these phone companies do you preferr: " + phoneMaker);
+            var favorite = prompt("Would you want a " + color);
+            var pay = prompt("are you willing to pay $" + cost + " for a phone")
             // end script
             </script>
             <!--All items within the div class are edited in CSS-->
         </div>    
 
+<!----------------------------------------------------------------->
+<!--FORMS-->
         <div class="H4">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+         </div>
+<!------------------------------------------------------------------->
 
-
-
-    </div>
     
 </body>
 
